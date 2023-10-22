@@ -1,0 +1,18 @@
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Nb Books</th>
+    </tr>
+    {% for a in auth %}
+        <tr>
+            <td>{{ a.cin }}</td>
+            <td>{{ a.username }}</td>
+            <td>{{ a.email }}</td>
+            <td>{{ a.getNbBooks() }}</td>
+           
+        </tr>
+    {% endfor %}
+</table>

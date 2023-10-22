@@ -1,0 +1,23 @@
+{% set nbLivres=0 %}
+{% for authors in tab %}
+{% set nbLivres=nbLivres +authors.nb_books%}
+{{authors.id}}
+{{authors.username |upper}}
+{{authors.email}}
+{{authors.nb_books}}
+<img src="{{asset(authors.picture)}}" width="20px"higth="20px">
+<a href="{{path('detail',{'id':authors.id})}}">detail</a>
+<br>
+
+{%else%}
+NO authors
+{% endfor %}
+
+
+
+{% if tab is empty%}
+3A16 no 
+{% endif %}
+nb authors={{tab|length}}
+
+nb livres={{nbLivres}}

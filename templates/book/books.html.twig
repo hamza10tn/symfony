@@ -1,0 +1,19 @@
+
+<table border="1">
+    <tr>
+        <th>TITLE</th>
+        <th>CATEGORY</th>
+        <th>REFERENCE</th>
+        
+        <th>CIN Author</th>
+    </tr>
+    {% for a in book %}
+        <tr>
+            <td>{{ a.title }}</td>
+            <td>{{ a.category }}</td>
+            <td>{{ a.ref }}</td>
+         {#   <td>{{ a.publicationDate }}</td>  #}
+            <td>{{ a.auth }}</td>
+        </tr>
+    {% endfor %}
+</table>
