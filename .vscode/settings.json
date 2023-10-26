@@ -1,0 +1,6 @@
+{
+    "editor.scrollbar.scrollByPage": false,
+    "editor.scrollbar.verticalScrollbarSize": 15,
+    "editor.scrollbar.horizontalScrollbarSize": 12,
+    "notebook.diff.ignoreOutputs": false
+}

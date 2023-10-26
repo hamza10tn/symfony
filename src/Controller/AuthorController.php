@@ -63,7 +63,7 @@ class AuthorController extends AbstractController
 public function addAuthor(ManagerRegistry $mr )
 {
 $author=new Author();
-$author->setCin(5);
+$author->setCin(100);
 $author->setUsername("Peter");
 $author->setEmail("peter@gmail.com");
 $author->setNbBooks(5);
